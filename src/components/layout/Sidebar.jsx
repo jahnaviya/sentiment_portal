@@ -13,7 +13,7 @@ function Sidebar({ activeTab, setActiveTab, sidebarOpen, setSidebarOpen }) {
   }
 
   const navItems = [
-    { id: 'overview', label: 'Overview', icon: BarChart3 },
+    { id: 'overview', label: 'Overview Menu', icon: BarChart3 },
     { id: 'upload', label: 'Upload Sentiment', icon: Upload },
     { id: 'settings', label: 'Settings', icon: Settings },
   ]
