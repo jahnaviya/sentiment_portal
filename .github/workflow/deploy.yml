@@ -1,4 +1,5 @@
-name: Sentiment Portal
+name: Deploy React App
+
 on:
   push:
     branches:
@@ -20,8 +21,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build React app
+      - name: Build React app (Vite)
         run: npm run build
+
+      - name: Verify build output
+        run: |
+          ls -la
+          ls -la dist
 
       - name: Upload build to server (temp)
         uses: appleboy/scp-action@v0.1.7
